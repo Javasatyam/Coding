@@ -1,0 +1,13 @@
+package RestAssured;
+import static io.restassured.RestAssured.*;
+import static io.restassured.matcher.RestAssuredMatchers.*;
+org.hamcrest.Matchers.*
+
+public class ApiAutomation {
+
+	public static void main(String[] args) {
+		
+     RestAssured.
+	}
+
+}

@@ -1,0 +1,18 @@
+package string;
+
+public class Demo {
+	String greeting = "Hello world!"; // literal
+	String s=new String("Satyam");
+	int x=5;
+	int y=6;
+//	rahul ds=new rahul();
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Demo s=new Demo();
+		Demo s1=new Demo();
+		System.out.println(s.x==s1.y);
+	
+
+	}
+
+}

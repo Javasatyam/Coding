@@ -1,0 +1,16 @@
+package ui;
+import org.openqa.selenium.By;
+import org.openqa.selenium.chrome.ChromeDriver;
+import io.github.bonigarcia.wdm.WebDriverManager;
+public class Ui_Test {
+	public static void main(String[] args) {
+		// TODO Auto-generated method
+	    WebDriverManager.chromedriver().setup();
+		System.out.println("Hello Satyam Singh");
+		ChromeDriver driver = new ChromeDriver();
+		driver.get("https://www.google.com/");
+//		driver.findElement(By.xpath("//input[@id='gender-male']")).click();
+		
+
+	} 	
+}

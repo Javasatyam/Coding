@@ -1,0 +1,16 @@
+
+public class Sample {
+	public String count(String xyz)
+	{
+		String [] abc=xyz.split(xyz);
+		return null;
+		
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+
+	}
+
+}

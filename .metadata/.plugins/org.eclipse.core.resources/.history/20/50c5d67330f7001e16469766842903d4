@@ -1,0 +1,17 @@
+package interview;
+
+public class Test {
+
+	public static void main(String[] args) {
+		
+		// TODO Auto-generated method stub
+      String xyz="This is java programm";
+      String abc="is";
+      String [] arr=xyz.split("\\s");
+      for(String z:arr)
+      {
+    	  System.out.println(z);
+      }
+
+}
+}

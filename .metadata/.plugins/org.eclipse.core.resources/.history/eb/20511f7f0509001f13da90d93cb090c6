@@ -1,0 +1,31 @@
+package ui;
+
+import java.util.HashMap;
+import java.util.Map;
+import java.util.TreeMap;
+
+public class Test1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+      String s="i am learning learning java java programming programming";
+      String[] arr=s.split(" ");
+      int count=0;
+      Map<String ,Integer> value=new TreeMap<>();
+      for(int i=0; i<arr.length; i++)
+      {
+    	  count=0;
+    	  String xyz=arr[i];
+    	  for(int x=0; x<arr.length; x++)
+    	  {
+    		  if(value.containsKey(xyz==null))
+    		  {
+    			  value.put(xyz,1);
+    		  }
+    	  }
+    	  value.put(arr[i],count);
+      }
+      System.out.println(value);
+	}
+
+}

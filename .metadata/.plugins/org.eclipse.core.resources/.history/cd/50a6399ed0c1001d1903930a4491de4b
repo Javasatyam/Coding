@@ -1,0 +1,35 @@
+package string;
+
+public class Demo {
+//	String greeting = "Hello world!"; // literal 1
+//	String s=new String("Satyam");// 2
+//	greeting.co  
+//	int x=5;
+//	int y=6;
+////	String xyz=new String("satyam");
+////	String xyz1=new String("satyam");
+//	String zz="satyam";
+//	String xyz1="satyam";
+	 
+	
+//	rahul ds=new rahul();
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Demo s=new Demo();
+		Demo s1=new Demo();
+		String s12="java string";    
+		// The string s1 does not get changed, even though it is invoking the method      
+		// concat(), as it is immutable. Therefore, the explicit assignment is required here.  
+		s12.concat("is immutable");    
+		System.out.println(s12);    
+		s12=s12.concat(" is immutable so assign it explicitly");    
+		System.out.println(s1);   
+		
+		//
+		
+		
+	
+
+	}
+
+}

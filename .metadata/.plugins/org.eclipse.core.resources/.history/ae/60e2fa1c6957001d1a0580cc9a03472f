@@ -1,0 +1,30 @@
+package ui;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+public class Loigin_page {
+
+	public static WebDriver driver;
+	public static String browser = "chrome";
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		if (browser.equals("chrome")) {
+			WebDriverManager.chromedriver().setup();
+			driver = new ChromeDriver();
+		} else if (browser.equals("firefox")) {
+			WebDriverManager.firefoxdriver().setup();
+			driver = new FirefoxDriver();
+		}
+		driver.get("http://sampleapp.tricentis.com/101/");
+		driver.findElement(By.id("nav_automobile")).click();
+		
+	}
+
+}

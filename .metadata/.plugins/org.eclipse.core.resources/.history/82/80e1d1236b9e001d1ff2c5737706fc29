@@ -1,0 +1,12 @@
+package this_keyword;
+
+public class First_program {
+	
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		First_program s=new First_program();//Reference Variable 
+	}
+
+}

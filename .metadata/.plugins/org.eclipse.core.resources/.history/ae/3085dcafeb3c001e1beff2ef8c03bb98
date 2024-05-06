@@ -1,0 +1,17 @@
+package testscript;
+
+import org.testng.annotations.Test;
+
+import Pages.Loginpage;
+
+public class TC_Login_001 extends BaseTest{
+	@Test
+    public void TC_Login_001(){
+        String username = "Admin",password = "admin123";
+
+        Loginpage loginPage = new Loginpage(x);
+        loginPage.validLogin(username, password);
+
+    }
+
+}

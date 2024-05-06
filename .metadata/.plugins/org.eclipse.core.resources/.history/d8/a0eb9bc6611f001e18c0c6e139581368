@@ -1,0 +1,17 @@
+package day1;
+
+import org.testng.annotations.Test;
+
+public class Basecase {
+	@BeforeTest
+	public void tes()
+	{
+		
+	}
+	@Test
+	public void test()
+	{
+		System.out.println("Satyam is pass");
+	}
+
+}

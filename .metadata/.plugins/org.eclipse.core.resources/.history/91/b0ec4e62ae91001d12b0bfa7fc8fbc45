@@ -1,0 +1,80 @@
+package sampleapp;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.Select;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+public class UiTest {
+
+	public static WebDriver driver;
+	public static String browser = "chrome";
+	public static String One_login_url="https://airbusval.onelogin.com/";
+	public static String Dev_url="https://mytrainingauthoring-dev.airbus-v.com/";
+
+	public static void main(String[] args) throws InterruptedException {
+		// TODO Auto-generated method stub
+
+		WebDriverManager.chromedriver().setup();
+		driver = new ChromeDriver();
+		driver.manage().window().maximize();
+		
+
+		driver.get("https://mytrainingauthoring-dev.airbus-v.com/");
+		// driver.findElement(By.linkText("Automobile")).click();
+		driver.findElement(By.xpath("//a[@id='nav_automobile']")).click();
+		WebElement make_Dropdown = driver.findElement(By.id("make"));
+		// Drop Dwon for Make
+		Select select = new Select(make_Dropdown);
+		select.selectByValue("BWM");
+		// Engine Performance [kW]
+		driver.findElement(By.id("engineperformance")).sendKeys("1200");
+		// Date Picker
+		driver.findElement(By.id("opendateofmanufacturecalender")).click();
+		Thread.sleep(2000);
+		driver.findElement(By.xpath("//a[contains(@class,'ui-state-default') and text()='1']")).click();
+
+		// Number of Seats dropdwon
+		WebElement Seats_dropdwon = driver.findElement(By.xpath("//select[@id='numberofseats']"));
+		Select pick = new Select(Seats_dropdwon);
+		pick.selectByValue("1");
+		// Fuel Type dropdwon
+		WebElement Fule = driver.findElement(By.xpath("//select[@id='fuel']"));
+		Select Fule_Value = new Select(Fule);
+		Fule_Value.selectByValue("Petrol");
+		Thread.sleep(1000);
+		// Text Value for List Price [$]
+		driver.findElement(By.xpath("//input[@id='listprice']")).sendKeys("1200");
+		Thread.sleep(1000);
+		// Text Value for License Plate Number
+		driver.findElement(By.xpath("//input[@id='licenseplatenumber']")).sendKeys("HR63D1977");
+		Thread.sleep(1000);
+		// Text Value for Annual Mileage [mi]
+		driver.findElement(By.xpath("//input[@id='annualmileage']")).sendKeys("100");
+		Thread.sleep(1000);
+		// Next Button for Click
+		driver.findElement(By.xpath("//button[@id='nextenterinsurantdata']")).click();
+		Thread.sleep(1000);
+		// Value for First Name
+		driver.findElement(By.xpath("//input[@id='firstname']")).sendKeys("Satyam");
+		Thread.sleep(1000);
+		// Value for Lastname
+		driver.findElement(By.xpath("//input[@id='lastname']")).sendKeys("Singh");
+		Thread.sleep(2000);
+		// calendar
+		String month = driver.findElement(By.xpath("//span[@class='ui-datepicker-month']")).getText();
+		Thread.sleep(2000);
+		System.out.println(month);
+
+		int a = 10;
+
+		Thread.sleep(5000);
+		driver.close();
+
+	}
+
+}

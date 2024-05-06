@@ -1,0 +1,27 @@
+package controle_statment;
+
+public class Loop {
+	int i=2;
+	int x=90;
+	int y=29;
+	void sk(int a,int b)
+	{
+		i=a;
+		x=b;
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Loop s=new Loop();
+		s.sk(121, 190);
+		System.out.println(s.i);
+		System.out.println(s.x);
+		Loop s21=new Loop();
+		System.out.println(s.i);
+		System.out.println(s.x);
+		 
+   
+
+}
+}

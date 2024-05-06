@@ -1,0 +1,33 @@
+package variable;
+
+public class Varibale {
+	int a=10; 
+	static int b=10;
+	
+	 
+	
+	
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+      Varibale staticvar=new Varibale();
+      Varibale staticvar1=new Varibale();
+      System.out.println("obj1 "+staticvar.a);
+      System.out.println("obj2 "+staticvar1.a);
+      System.out.println("static"+Varibale.b);
+		
+      staticvar.a=10;
+      staticvar1.a=30;
+      Varibale.b=40;
+      System.out.println("obj1 "+staticvar.a);
+      System.out.println("obj2 "+staticvar1.a);
+      System.out.println("static "+Varibale.b);
+      
+      
+		
+		
+		
+
+	}
+
+}

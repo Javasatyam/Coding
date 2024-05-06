@@ -1,0 +1,40 @@
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class demo {
+	int a = 10; 
+	char b = 's' ;
+	//byte sat = 10;
+	short simmy = 20 ;
+	float shailendar = 10.3f;
+	double Nidhi = 20.1;
+	String ronit = "10"; 
+	int sat;
+	
+    
+	void Nidhi()
+	{
+		int sat ;
+		System.out.println(sat);
+		
+	}
+	demo()
+	{
+		int sat = 10;
+	}
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method
+		System.setProperty("webdriver.chrome.driver","C:\\Users\\ssanjay\\Downloads\\chromedriver_win32\\chromedriver.exe");
+		System.out.println("Hello Satyam Singh");
+		ChromeDriver driver = new ChromeDriver();
+		driver.get("https://www.google.com/");
+        
+	} 	
+
+}
+
+
+
+
+	

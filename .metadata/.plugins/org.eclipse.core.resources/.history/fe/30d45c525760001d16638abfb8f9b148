@@ -1,0 +1,24 @@
+package static_Use;
+
+public class Counter {
+//	
+	int abc=10; 
+	static int call=20;
+	 void display()
+	{
+		
+		System.out.println(abc);
+		
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Counter sat = new Counter();
+		System.out.println(call);
+		System.out.println(Counter.call);
+		System.out.println(sat.call);
+		
+		
+		}
+
+}

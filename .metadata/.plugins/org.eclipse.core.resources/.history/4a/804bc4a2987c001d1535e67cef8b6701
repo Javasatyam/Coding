@@ -1,0 +1,31 @@
+package overriding;
+
+public class Vechale {
+	void run()
+	{
+		
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Bike s=new Bike();
+		s.run();
+		
+
+	}
+
+}
+class Bike extends Vechale
+{
+	void run()
+	{
+		System.out.println("This is the bike");
+	}
+}
+class car
+{
+	void run()
+	{
+		System.out.println("This is the Car");
+	}	
+}

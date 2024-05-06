@@ -1,0 +1,31 @@
+package Pages;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+
+public class AdminPage extends Basepage {
+
+	public AdminPage(WebDriver driver) {
+		super(driver);
+		// TODO Auto-generated constructor stub
+	}
+	@FindBy(linkText="Admin")
+	 WebElement clickAction;
+	@FindBy(xpath="//button[@class='oxd-button oxd-button--medium oxd-button--secondary']")
+	WebElement addButt;
+	
+	public void ClickonAdmin()
+	{   
+		waitForElement(3000);
+		clickAction.click();
+	}
+	public void AddEmployee()
+	{
+		addButt.click();
+	}
+	 
+
+
+}

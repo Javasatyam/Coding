@@ -1,0 +1,26 @@
+package variable;
+
+public class Varibale {
+	int a=10; 
+	static int b=10;
+	
+	 
+	
+	
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+      Varibale staticvar=new Varibale();
+      Varibale staticvar1=new Varibale();
+		
+      staticvar.a=10;
+      staticvar1.a=30;
+      Varibale.b=40;
+      
+		
+		
+		
+
+	}
+
+}

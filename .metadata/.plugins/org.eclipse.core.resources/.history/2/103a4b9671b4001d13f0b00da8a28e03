@@ -1,0 +1,15 @@
+package string;
+
+public class Demo {
+	String greeting = "Hello world!"; // literal
+	String s=new String("Satyam");
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
+class rahul
+{
+	
+}

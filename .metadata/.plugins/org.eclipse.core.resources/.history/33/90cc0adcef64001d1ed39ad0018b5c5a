@@ -1,0 +1,45 @@
+package static_Use;
+
+public class Counter {
+//	
+	int abc=10; 
+	static int call=20;
+	 void display()
+	{
+		
+//		System.out.println(abc);
+		
+		System.out.println("This is the Test");
+		
+	}
+	 void nonstatic()
+	 {
+//		 display();
+		 System.out.println(abc);
+		 display();
+	 }
+	 static void test()
+	 {
+		 Counter fat = new Counter();
+		 fat.display();
+	 }
+	 static void run()
+	 {
+		 
+	 }
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Counter sat = new Counter();
+//		System.out.println(call);
+//		System.out.println(Counter.call);
+//		System.out.println(sat.call);
+//		System.out.println(sat.abc);
+		//sat.display();
+		//sat.nonstatic();
+		//test();
+		sat.nonstatic();
+		
+		}
+
+}

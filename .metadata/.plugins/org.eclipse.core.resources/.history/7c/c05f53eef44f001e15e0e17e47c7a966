@@ -1,0 +1,35 @@
+package Pages;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.Select;
+import org.testng.Assert;
+
+public class Basepage {
+	protected static WebDriver driver;
+	public Basepage(WebDriver driver)
+	{
+		this.driver=driver;
+		PageFactory.initElements(driver, this);
+	}
+	   public static void waitForElement(long timeout) {
+	        try {
+	            Thread.sleep(timeout);
+	        } catch (Exception e) {
+	            e.printStackTrace();
+	        }
+	        
+	    }
+	   public static void assertTitle(WebElement element, String title) {
+           String actualTitle = element.getText();
+           System.out.println("Title: " + actualTitle);
+           Assert.assertEquals(actualTitle, title,"Title NOT match");
+       }
+	   public static void DropDownHandel(WebElement element, String Loacater, String Index)
+		{
+		   Select se = new Select(driver.findElement(By.xpath(Loacater)));
+		   se.selectByValue(Index);
+		}
+}

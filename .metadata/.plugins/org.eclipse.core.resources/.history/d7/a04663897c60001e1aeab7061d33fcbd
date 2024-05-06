@@ -1,0 +1,33 @@
+package variable;
+
+public class Varibale {
+	int a=10; 
+	static int b=10;
+	
+	 void xyz()
+	{
+	  	int a=10;
+	}  
+	
+	
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+      Varibale staticvar=new Varibale();
+      Varibale staticvar1=new Varibale();
+		
+		int a=10;
+		int b=20;
+		System.out.println("valuew of a before swap"+a);
+		System.out.println("valuew of a before swap b"+b);
+		a=a+b;
+		b=a-b;
+		a=a-b;
+		System.out.println("valuew of a"+a);
+		System.out.println("valuew of b"+b);
+		
+		
+
+	}
+
+}

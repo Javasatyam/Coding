@@ -1,0 +1,42 @@
+package ui;
+
+public class Demo {
+	 static void reversethearray()
+	    {
+		int [] xyz = {1,2,3,4};
+		  int L=0;
+		  int R=xyz.length-1;
+//		  System.out.println(R);
+		  int itration =2;
+		  while(L<itration)
+		  {
+			  int c=xyz[L];
+			  xyz[L]=xyz[R];
+			  xyz[R]=c;
+			  L+=1;
+			  R-=1;
+		  }
+//		  for(int i=0; i<xyz.length; i++)
+//		  {
+//			  System.out.println(xyz[i]);
+//		  }
+//				
+		   
+	    }
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		reversethearray();
+//		String str = "Your order value is $44.34";
+//	    int position=str.indexOf("$");
+//	    System.out.println(position);
+//	    String intvalue=str.substring(position+1).trim();
+//	    Double value=Double.parseDouble(intvalue);
+//	    
+//	    System.out.println(value*5);
+	    
+	    
+		
+		
+	}
+
+}

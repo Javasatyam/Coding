@@ -1,0 +1,21 @@
+package static_Use;
+
+public class Example {
+	void display()
+	{
+		System.out.println("Satyam");
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
+class Test
+{
+	static void role()
+	{
+		System.out.println("This is static method");
+	}
+}

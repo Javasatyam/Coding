@@ -1,0 +1,33 @@
+package ui;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+public class Loigin_page {
+ 
+public static WebDriver driver;	
+public static String browser = "chrome";
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		if(browser.equals("chrome"))
+		{
+			WebDriverManager.chromedriver().setup();
+			driver = new ChromeDriver();
+		}
+		else if(browser.equals("edge"))
+		{
+			WebDriverManger.edgedriver().setup();
+		}
+		driver.get("https://www.saucedemo.com/");
+		driver.findElement(By.id("user-name")).sendKeys("standard_user");
+		driver.findElement(By.id("password")).sendKeys("secret_sauce");
+		driver.findElement(By.xpath("//*[@id=\"login-button\"]")).click();
+		
+
+}
+
+}

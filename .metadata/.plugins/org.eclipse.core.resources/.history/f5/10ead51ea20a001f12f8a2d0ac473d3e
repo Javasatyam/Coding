@@ -1,0 +1,59 @@
+package com.ellmenusdev.pages;
+
+import java.time.Duration;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.BeforeSuite;
+
+import com.Ellmenus.base.EllmenusBase;
+
+
+
+public class LoginPages extends EllmenusBase
+{
+	public static final String URL = "https://www.demoblaze.com/index.html";
+	   public static final String USER_LOGIN = "login2";
+	    public static final String USER_NAME = "loginusername";
+	    public static final String USER_PASS = "loginpassword";
+	    public static final String SUBMIT_BUTTON = "//button[@onclick='logIn()']";
+	   
+	//WebDriver driver;
+	
+	//public static final String URL = "https://www.demoblaze.com/index.html";
+	
+	
+	
+	
+	 public void enterUserLogIn() {
+		 WebElement element = driver.findElement(By.id(USER_LOGIN));
+		 element.click();
+		 
+	 }
+	 
+	 public void enterUserName(String uname) {
+		 WebElement element = driver.findElement(By.id(USER_NAME));
+		 element.sendKeys(uname);
+	 }
+	 public void enterUserPassword(String pass) {
+		 WebElement element = driver.findElement(By.id(USER_PASS));
+		 element.sendKeys(pass);
+       
+   }
+
+  
+   public void enterUserClickon() {
+	   WebElement element = driver.findElement(By.xpath(SUBMIT_BUTTON));
+		 element.click();
+      
+   }
+    }
+
+
+	
+
+
+
+

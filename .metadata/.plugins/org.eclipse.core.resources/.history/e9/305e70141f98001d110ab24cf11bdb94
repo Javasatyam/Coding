@@ -1,0 +1,10 @@
+package abstraction;
+
+interface TT
+{
+	void show();
+}
+public class Demo implements TT
+{
+	
+}

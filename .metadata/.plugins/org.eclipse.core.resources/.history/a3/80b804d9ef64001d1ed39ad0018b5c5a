@@ -1,0 +1,18 @@
+package static_Use;
+
+public class Static_Block {
+    
+	static 
+	{
+		System.out.println("This is the staztic 1");
+	}
+	static 
+	{
+		System.out.println("This is the static 2");
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

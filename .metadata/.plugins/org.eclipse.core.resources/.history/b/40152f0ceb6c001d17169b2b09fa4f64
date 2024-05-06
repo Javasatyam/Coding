@@ -1,0 +1,23 @@
+package controle_statment;
+
+public class Condition {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int x =10;
+		if(x<10) // it is understand the True and False if condition will true than block will excuted 
+		{
+		  System.out.println("This is If condition");	
+		}
+		
+		else  // it is understand the True and False 
+		{
+			System.out.println("This is else condition");
+		}
+		
+		
+		
+
+	}
+
+}

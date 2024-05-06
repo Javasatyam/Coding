@@ -1,0 +1,10 @@
+package abstraction;
+
+ interface Demo {
+	void show();
+
+}
+ class Satyam
+{
+	
+}

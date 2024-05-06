@@ -1,0 +1,44 @@
+package satyam;
+import org.openqa.selenium.By;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import org.testng.Assert;
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+public class Ui_Test {
+	public static void main(String[] args) throws InterruptedException {
+		// TODO Auto-generated method
+		
+		WebDriverManager.chromedriver().setup(); 
+		System.out.println("Hello Satyam Singh");
+		ChromeDriver driver = new ChromeDriver();
+		driver.get("https://demowebshop.tricentis.com/register");
+		driver.findElement(By.xpath("//input[@id='gender-male']")).click();
+		driver.findElement(By.xpath("//input[@id='FirstName']")).sendKeys("satyam");
+		driver.findElement(By.xpath("//input[@id='LastName']")).sendKeys("singh");
+		driver.findElement(By.xpath("//input[@id='Email']")).sendKeys("satyam.s.ronit@gmail.com");
+		driver.findElement(By.xpath("//input[@id='Password']")).sendKeys("1234567");
+		driver.findElement(By.xpath("//input[@id='ConfirmPassword']")).sendKeys("123456");
+		Thread.sleep(1000); 
+		String atcul_value=driver.findElement(By.xpath("//span[@class='field-validation-error']/span[1]")).getText();
+		 
+		String expected_value="The password and confirmation password do not match.";
+		
+		  if(atcul_value.equalsIgnoreCase(expected_value))
+				  {
+			  driver.findElement(By.xpath("//input[@id='Password']")).sendKeys("1234567");
+			  driver.findElement(By.xpath("//input[@id='ConfirmPassword']")).sendKeys("1234567");
+			  driver.findElement(By.xpath("//input[@id='register-button']")).submit();
+			
+				  }
+	
+		
+		
+		
+		
+
+		
+		
+
+	} 	
+}

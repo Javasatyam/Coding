@@ -1,0 +1,13 @@
+package controle_statment;
+
+public class Access {
+	private int i=10;// default,private,public,protected 
+	
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub access modifier
+	 	
+		
+	}
+
+}

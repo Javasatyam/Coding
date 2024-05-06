@@ -1,0 +1,25 @@
+package controle_statment;
+
+public class Loop {
+	int i=2;
+	int x=90;
+	int y=29;
+//	void sk(int a,int b)
+//	{
+//		i=a;
+//		x=b;
+//	}
+    
+	Loop()
+	{
+		
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+
+   
+
+}
+}

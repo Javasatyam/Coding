@@ -1,0 +1,15 @@
+package login_Ui;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Login_Page {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+     ChromeDriver dev=new ChromeDriver();
+     dev.get("https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java/4.7.2");
+     dev.findElement(By.xpath("//*[@id=\"search\"]/form/input[2]")).sendKeys("ca");
+	}
+
+}

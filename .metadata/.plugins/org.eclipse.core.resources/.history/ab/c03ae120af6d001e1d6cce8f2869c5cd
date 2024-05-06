@@ -1,0 +1,21 @@
+
+public class Sample {
+	public String count(String xyz)
+	{
+		String [] abc=xyz.split(xyz);
+		String countvalue="";
+		for(String a:abc)
+		{
+			countvalue=a;
+		}
+		return countvalue;
+		
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+
+	}
+
+}

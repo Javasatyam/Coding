@@ -1,0 +1,10 @@
+package datadrivenFramework;
+
+
+public class REstAssured {
+	public static void main(String arg[])
+	{
+		
+	}
+
+}

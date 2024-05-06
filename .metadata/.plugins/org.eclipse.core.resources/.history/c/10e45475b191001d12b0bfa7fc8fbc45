@@ -1,0 +1,41 @@
+package sampleapp;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.Select;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+public class UiTest {
+
+	public static WebDriver driver;
+	public static String browser = "chrome";
+	public static String One_login_url="https://airbusval.onelogin.com/";
+	public static String Dev_url="https://mytrainingauthoring-dev.airbus-v.com/";
+
+	public static void main(String[] args) throws InterruptedException {
+		// TODO Auto-generated method stub
+        
+		WebDriverManager.chromedriver().setup();
+		driver = new ChromeDriver();
+		driver.manage().window().maximize();
+		//(//*[@id="root"]/div/div[2]/div[1]/div[2]/form/div/div[3]/div/button)
+
+		driver.get("https://airbusval.onelogin.com/");
+		// driver.findElement(By.linkText("Automobile")).click();
+		Thread.sleep(2000);
+		driver.findElement(By.xpath("//*[@id=\"username\"]")).sendKeys("SSINO3YE");
+		driver.findElement(By.xpath("//*[@id=\"root\"]/div/div[2]/div[1]/div[2]/form/div/div[3]/div/button")).click();
+		Thread.sleep(2000);
+		driver.findElement(By.xpath("//*[@id=\"password\"]")).sendKeys("Welcomesopra@958240");
+		Thread.sleep(2000);
+		driver.findElement(By.xpath("//*[@id=\"root\"]/div/div[2]/div[1]/div[2]/form/div/div[3]/div/button")).click();
+		
+		
+
+	}
+
+}

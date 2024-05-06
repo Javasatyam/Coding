@@ -1,0 +1,21 @@
+package this_keyword;
+
+public class First_program {
+	int xyz;
+	void satyam(int xyz)
+	{
+		xyz=xyz;
+	}
+	void show()
+	{
+		
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		First_program s=new First_program();//Reference Variable 
+		s.satyam(100);
+	}
+
+}

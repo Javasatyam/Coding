@@ -1,0 +1,18 @@
+package static_Use;
+
+public class Counter {
+//	
+	int abc; 
+	static int call;
+	 void display()
+	{
+		
+		System.out.println(abc);
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		}
+
+}

@@ -1,0 +1,16 @@
+package interview;
+
+public class ReversetheSingleString {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String sat="Satyam";
+		char[] arr=sat.toCharArray();
+		for(int i=arr.length; i>=0; i--)
+		{
+			
+		}
+
+	}
+
+}

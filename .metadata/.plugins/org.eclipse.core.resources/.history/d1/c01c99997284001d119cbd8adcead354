@@ -1,0 +1,25 @@
+package encap;
+
+public class HDFC_Bank {
+     private int blance;//data hiding 
+     
+	public int getBlance(){
+		return blance;
+	}
+
+	public void setBlance(int blance){
+		if(blance==0)
+		{
+			throw new IllegalArgumentException();
+         
+		}
+		this.blance = blance;
+		
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
